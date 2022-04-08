@@ -1,0 +1,942 @@
+
+     Program PWSCF v.6.8 starts on  8Apr2022 at 16: 3:37 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     2 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+     882 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from h2.relax.in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1904    1904    474                88754    88754   11058
+     Max        1905    1905    475                88755    88755   11061
+     Sum        3809    3809    949               177509   177509   22119
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      20.0000  a.u.
+     unit-cell volume          =    8000.0000 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         2.00
+     number of Kohn-Sham states=            1
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     120.0000  Ry
+     scf convergence threshold =      1.0E-08
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     energy convergence thresh.=      1.0E-04
+     force convergence thresh. =      1.0E-03
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     nstep                     =           50
+
+
+     celldm(1)=  20.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for H  read from file:
+     /home/elvis/quantumEspresso/SSSP_1.1.2_PBE_precision/H_ONCV_PBE-1.0.oncvpsp.upf
+     MD5 check sum: 1790becc920ee074925cf490c71280fe
+     Pseudo is Norm-conserving, Zval =  1.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1166 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+
+     atomic species   valence    mass     pseudopotential
+        H              1.00     1.00784     H ( 1.00)
+
+      8 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           H   tau(   2) = (   0.0472432   0.0000000   0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   177509 G-vectors     FFT dimensions: (  72,  72,  72)
+
+     Estimated max dynamical RAM per process >      51.27 MB
+
+     Estimated total dynamical RAM >     102.54 MB
+
+     Initial potential from superposition of free atoms
+
+     starting charge    1.99998, renormalised to    2.00000
+
+     negative rho (up, down):  1.446E-03 0.000E+00
+     Starting wfcs are    2 randomized atomic wfcs
+
+     total cpu time spent up to now is        0.3 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.204E-04 0.000E+00
+
+     total cpu time spent up to now is        0.5 secs
+
+     total energy              =      -2.14975724 Ry
+     estimated scf accuracy    <       0.23564493 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  1.0
+
+     negative rho (up, down):  8.176E-05 0.000E+00
+
+     total cpu time spent up to now is        0.7 secs
+
+     total energy              =      -2.16451425 Ry
+     estimated scf accuracy    <       0.00277422 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.39E-04,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.005E-05 0.000E+00
+
+     total cpu time spent up to now is        1.0 secs
+
+     total energy              =      -2.16516633 Ry
+     estimated scf accuracy    <       0.00003681 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.84E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.599E-07 0.000E+00
+
+     total cpu time spent up to now is        1.2 secs
+
+     total energy              =      -2.16516910 Ry
+     estimated scf accuracy    <       0.00000232 Ry
+
+     iteration #  5     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.16E-07,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        1.4 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+   -11.7299
+
+     highest occupied level (ev):   -11.7299
+
+!    total energy              =      -2.16516942 Ry
+     estimated scf accuracy    <          6.4E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -4.59309166 Ry
+     hartree contribution      =       2.43127229 Ry
+     xc contribution           =      -1.55306837 Ry
+     ewald contribution        =       1.54971833 Ry
+
+     convergence has been achieved in   5 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.84604599    0.00000000    0.00000000
+     atom    2 type  1   force =     0.84604599    0.00000000    0.00000000
+
+     Total force =     1.196490     Total SCF correction =     0.000022
+
+     BFGS Geometry Optimization
+     Energy error            =      0.0E+00 Ry
+     Gradient error          =      8.5E-01 Ry/Bohr
+
+     number of scf cycles    =   1
+     number of bfgs steps    =   0
+
+     energy             new  =      -2.1651694150 Ry
+
+     new trust radius        =       0.5000000000 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.2645886055        0.0000000000        0.0000000000
+H             0.7645886055        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  2.881E-03 0.000E+00
+
+     total cpu time spent up to now is        1.7 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  7.0
+
+     negative rho (up, down):  6.663E-04 0.000E+00
+
+     total cpu time spent up to now is        1.9 secs
+
+     total energy              =      -2.25253959 Ry
+     estimated scf accuracy    <       0.07715765 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.86E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.400E-04 0.000E+00
+
+     total cpu time spent up to now is        2.1 secs
+
+     total energy              =      -2.26160119 Ry
+     estimated scf accuracy    <       0.00136507 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.83E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.233E-06 0.000E+00
+
+     total cpu time spent up to now is        2.3 secs
+
+     total energy              =      -2.26175091 Ry
+     estimated scf accuracy    <       0.00010407 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.20E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  3.581E-07 0.000E+00
+
+     total cpu time spent up to now is        2.5 secs
+
+     total energy              =      -2.26175606 Ry
+     estimated scf accuracy    <       0.00000049 Ry
+
+     iteration #  5     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.43E-08,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.550E-08 0.000E+00
+
+     total cpu time spent up to now is        2.8 secs
+
+     total energy              =      -2.26175626 Ry
+     estimated scf accuracy    <       0.00000007 Ry
+
+     iteration #  6     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.66E-09,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        2.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+    -9.1716
+
+     highest occupied level (ev):    -9.1716
+
+!    total energy              =      -2.26175626 Ry
+     estimated scf accuracy    <          3.3E-10 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.22541354 Ry
+     hartree contribution      =       1.72392975 Ry
+     xc contribution           =      -1.22317134 Ry
+     ewald contribution        =       0.46289887 Ry
+
+     convergence has been achieved in   6 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.16789795    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.16789795    0.00000000    0.00000000
+
+     Total force =     0.237444     Total SCF correction =     0.000001
+     Energy error            =      9.7E-02 Ry
+     Gradient error          =      1.7E-01 Ry/Bohr
+
+     number of scf cycles    =   2
+     number of bfgs steps    =   1
+
+     energy             old  =      -2.1651694150 Ry
+     energy             new  =      -2.2617562650 Ry
+
+     CASE: energy            _new < energy            _old
+
+     new trust radius        =       0.0827944940 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.2207756460        0.0000000000        0.0000000000
+H             0.7207756460        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  8.037E-04 0.000E+00
+
+     total cpu time spent up to now is        3.2 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.103E-04 0.000E+00
+
+     total cpu time spent up to now is        3.5 secs
+
+     total energy              =      -2.28744682 Ry
+     estimated scf accuracy    <       0.00084754 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.24E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  3.460E-05 0.000E+00
+
+     total cpu time spent up to now is        3.7 secs
+
+     total energy              =      -2.28751592 Ry
+     estimated scf accuracy    <       0.00001437 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.18E-07,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.283E-08 0.000E+00
+
+     total cpu time spent up to now is        3.9 secs
+
+     total energy              =      -2.28751899 Ry
+     estimated scf accuracy    <       0.00000048 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.42E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        4.1 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+    -9.4721
+
+     highest occupied level (ev):    -9.4721
+
+!    total energy              =      -2.28751903 Ry
+     estimated scf accuracy    <          2.0E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.39558989 Ry
+     hartree contribution      =       1.81219007 Ry
+     xc contribution           =      -1.26239072 Ry
+     ewald contribution        =       0.55827152 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.14004415    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.14004415    0.00000000    0.00000000
+
+     Total force =     0.198052     Total SCF correction =     0.000012
+     Energy error            =      2.6E-02 Ry
+     Gradient error          =      1.4E-01 Ry/Bohr
+
+     number of scf cycles    =   3
+     number of bfgs steps    =   2
+
+     energy             old  =      -2.2617562650 Ry
+     energy             new  =      -2.2875190272 Ry
+
+     CASE: energy            _new < energy            _old
+
+
+     WARNING: bfgs curvature condition failed, Theta= 0.959
+     new trust radius        =       0.0910739434 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1725813907        0.0000000000        0.0000000000
+H             0.6725813907        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  1.027E-03 0.000E+00
+
+     total cpu time spent up to now is        4.4 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.714E-04 0.000E+00
+
+     total cpu time spent up to now is        4.6 secs
+
+     total energy              =      -2.30815934 Ry
+     estimated scf accuracy    <       0.00145763 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.29E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.730E-05 0.000E+00
+
+     total cpu time spent up to now is        4.8 secs
+
+     total energy              =      -2.30828280 Ry
+     estimated scf accuracy    <       0.00002103 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.05E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.153E-08 0.000E+00
+
+     total cpu time spent up to now is        5.0 secs
+
+     total energy              =      -2.30828741 Ry
+     estimated scf accuracy    <       0.00000075 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.77E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        5.2 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+    -9.8467
+
+     highest occupied level (ev):    -9.8467
+
+!    total energy              =      -2.30828745 Ry
+     estimated scf accuracy    <          2.3E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.60307106 Ry
+     hartree contribution      =       1.91970944 Ry
+     xc contribution           =      -1.31106377 Ry
+     ewald contribution        =       0.68613794 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.08245950    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.08245950    0.00000000    0.00000000
+
+     Total force =     0.116615     Total SCF correction =     0.000009
+     Energy error            =      2.1E-02 Ry
+     Gradient error          =      8.2E-02 Ry/Bohr
+
+     number of scf cycles    =   4
+     number of bfgs steps    =   3
+
+     energy             old  =      -2.2875190272 Ry
+     energy             new  =      -2.3082874451 Ry
+
+     CASE: energy            _new < energy            _old
+
+     new trust radius        =       0.1304151696 bohr
+     new conv_thr            =       0.0000000082 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1035686550        0.0000000000        0.0000000000
+H             0.6035686550        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  1.514E-03 0.000E+00
+
+     total cpu time spent up to now is        5.5 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  5.0
+
+     negative rho (up, down):  4.012E-04 0.000E+00
+
+     total cpu time spent up to now is        5.7 secs
+
+     total energy              =      -2.31086133 Ry
+     estimated scf accuracy    <       0.00476929 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.38E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  7.551E-05 0.000E+00
+
+     total cpu time spent up to now is        6.0 secs
+
+     total energy              =      -2.31127512 Ry
+     estimated scf accuracy    <       0.00005528 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.76E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  3.105E-08 0.000E+00
+
+     total cpu time spent up to now is        6.2 secs
+
+     total energy              =      -2.31128756 Ry
+     estimated scf accuracy    <       0.00000195 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.73E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        6.3 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+   -10.4809
+
+     highest occupied level (ev):   -10.4809
+
+!    total energy              =      -2.31128768 Ry
+     estimated scf accuracy    <          5.5E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.94524778 Ry
+     hartree contribution      =       2.09685945 Ry
+     xc contribution           =      -1.39305557 Ry
+     ewald contribution        =       0.93015622 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.08029533    0.00000000    0.00000000
+     atom    2 type  1   force =     0.08029533    0.00000000    0.00000000
+
+     Total force =     0.113555     Total SCF correction =     0.000017
+     Energy error            =      3.0E-03 Ry
+     Gradient error          =      8.0E-02 Ry/Bohr
+
+     number of scf cycles    =   5
+     number of bfgs steps    =   4
+
+     energy             old  =      -2.3082874451 Ry
+     energy             new  =      -2.3112876802 Ry
+
+     CASE: energy            _new < energy            _old
+
+     new trust radius        =       0.0643405116 bohr
+     new conv_thr            =       0.0000000030 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1376161875        0.0000000000        0.0000000000
+H             0.6376161875        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  6.315E-04 0.000E+00
+
+     total cpu time spent up to now is        6.6 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  4.0
+
+     negative rho (up, down):  1.623E-04 0.000E+00
+
+     total cpu time spent up to now is        6.9 secs
+
+     total energy              =      -2.31492299 Ry
+     estimated scf accuracy    <       0.00132115 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.61E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.894E-05 0.000E+00
+
+     total cpu time spent up to now is        7.1 secs
+
+     total energy              =      -2.31504659 Ry
+     estimated scf accuracy    <       0.00001673 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.37E-07,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.108E-08 0.000E+00
+
+     total cpu time spent up to now is        7.3 secs
+
+     total energy              =      -2.31504968 Ry
+     estimated scf accuracy    <       0.00000080 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.01E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        7.5 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+   -10.1516
+
+     highest occupied level (ev):   -10.1516
+
+!    total energy              =      -2.31504970 Ry
+     estimated scf accuracy    <          1.4E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.76897909 Ry
+     hartree contribution      =       2.00559919 Ry
+     xc contribution           =      -1.35055222 Ry
+     ewald contribution        =       0.79888243 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.01560697    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.01560697    0.00000000    0.00000000
+
+     Total force =     0.022072     Total SCF correction =     0.000006
+     Energy error            =      3.8E-03 Ry
+     Gradient error          =      1.6E-02 Ry/Bohr
+
+     number of scf cycles    =   6
+     number of bfgs steps    =   5
+
+     energy             old  =      -2.3112876802 Ry
+     energy             new  =      -2.3150497022 Ry
+
+     CASE: energy            _new < energy            _old
+
+     new trust radius        =       0.0104706604 bohr
+     new conv_thr            =       0.0000000016 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1320753526        0.0000000000        0.0000000000
+H             0.6320753526        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  8.883E-05 0.000E+00
+
+     total cpu time spent up to now is        7.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  3.0
+
+     negative rho (up, down):  2.025E-05 0.000E+00
+
+     total cpu time spent up to now is        8.0 secs
+
+     total energy              =      -2.31523687 Ry
+     estimated scf accuracy    <       0.00003046 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.52E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.657E-06 0.000E+00
+
+     total cpu time spent up to now is        8.2 secs
+
+     total energy              =      -2.31523936 Ry
+     estimated scf accuracy    <       0.00000045 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.25E-08,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        8.4 secs
+
+     total energy              =      -2.31523958 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.85E-10,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        8.6 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+   -10.2029
+
+     highest occupied level (ev):   -10.2029
+
+!    total energy              =      -2.31523959 Ry
+     estimated scf accuracy    <          7.7E-11 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.79662635 Ry
+     hartree contribution      =       2.01992612 Ry
+     xc contribution           =      -1.35718758 Ry
+     ewald contribution        =       0.81864822 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00243317    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.00243317    0.00000000    0.00000000
+
+     Total force =     0.003441     Total SCF correction =     0.000001
+     Energy error            =      1.9E-04 Ry
+     Gradient error          =      2.4E-03 Ry/Bohr
+
+     number of scf cycles    =   7
+     number of bfgs steps    =   6
+
+     energy             old  =      -2.3150497022 Ry
+     energy             new  =      -2.3152395907 Ry
+
+     CASE: energy            _new < energy            _old
+
+     new trust radius        =       0.0019339068 bohr
+     new conv_thr            =       0.0000000002 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1310519732        0.0000000000        0.0000000000
+H             0.6310519732        0.0000000000        0.0000000000
+
+
+
+     Writing output data file ./h2.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  1.068E-05 0.000E+00
+
+     total cpu time spent up to now is        9.0 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  4.91E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.038E-06 0.000E+00
+
+     total cpu time spent up to now is        9.2 secs
+
+     total energy              =      -2.31524387 Ry
+     estimated scf accuracy    <       0.00000106 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.31E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.309E-07 0.000E+00
+
+     total cpu time spent up to now is        9.4 secs
+
+     total energy              =      -2.31524403 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.83E-10,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        9.6 secs
+
+     total energy              =      -2.31524407 Ry
+     estimated scf accuracy    <          5.6E-10 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.81E-11,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is        9.8 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 22119 PWs)   bands (ev):
+
+   -10.2124
+
+     highest occupied level (ev):   -10.2124
+
+!    total energy              =      -2.31524407 Ry
+     estimated scf accuracy    <          2.6E-12 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =      -3.80177166 Ry
+     hartree contribution      =       2.02258754 Ry
+     xc contribution           =      -1.35842191 Ry
+     ewald contribution        =       0.82236196 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00009408    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00009408    0.00000000    0.00000000
+
+     Total force =     0.000133     Total SCF correction =     0.000000
+     Energy error            =      4.5E-06 Ry
+     Gradient error          =      9.4E-05 Ry/Bohr
+
+     bfgs converged in   8 scf cycles and   7 bfgs steps
+     (criteria: energy <  1.0E-04 Ry, force <  1.0E-03 Ry/Bohr)
+
+     End of BFGS Geometry Optimization
+
+     Final energy             =      -2.3152440728 Ry
+
+     File ./h2.bfgs deleted, as requested
+Begin final coordinates
+
+ATOMIC_POSITIONS (angstrom)
+H            -0.1310519732        0.0000000000        0.0000000000
+H             0.6310519732        0.0000000000        0.0000000000
+End final coordinates
+
+
+
+     Writing output data file ./h2.save/
+
+     init_run     :      0.27s CPU      0.31s WALL (       1 calls)
+     electrons    :      7.00s CPU      7.43s WALL (       8 calls)
+     update_pot   :      1.26s CPU      1.44s WALL (       7 calls)
+     forces       :      0.52s CPU      0.54s WALL (       8 calls)
+
+     Called by init_run:
+     wfcinit      :      0.02s CPU      0.02s WALL (       1 calls)
+     potinit      :      0.16s CPU      0.18s WALL (       1 calls)
+     hinit0       :      0.04s CPU      0.04s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      1.00s CPU      1.03s WALL (      36 calls)
+     sum_band     :      1.02s CPU      1.08s WALL (      36 calls)
+     v_of_rho     :      5.08s CPU      5.41s WALL (      43 calls)
+     mix_rho      :      0.64s CPU      0.73s WALL (      36 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.06s CPU      0.06s WALL (      73 calls)
+     cegterg      :      0.94s CPU      0.97s WALL (      36 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.00s CPU      0.01s WALL (     100 calls)
+     h_psi        :      0.90s CPU      0.93s WALL (     109 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (      72 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.02s CPU      0.02s WALL (     109 calls)
+     vloc_psi     :      0.86s CPU      0.89s WALL (     109 calls)
+     add_vuspsi   :      0.01s CPU      0.01s WALL (     109 calls)
+
+     General routines
+     calbec       :      0.02s CPU      0.03s WALL (     141 calls)
+     fft          :      3.43s CPU      3.66s WALL (     446 calls)
+     ffts         :      0.27s CPU      0.29s WALL (      36 calls)
+     fftw         :      0.87s CPU      0.89s WALL (     256 calls)
+
+     Parallel routines
+
+     PWSCF        :      9.20s CPU      9.91s WALL
+
+
+   This run was terminated on:  16: 3:47   8Apr2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
