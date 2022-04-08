@@ -1,7 +1,7 @@
 &control
-	calculation = 'relax'
+	calculation = 'scf'
 	prefix = 'h2'
-	pseudo_dir = '/home/elvis/quantumEspresso/SSSP_1.1.2_PBE_precision'
+	pseudo_dir = '/home/elvis/Quantum-Espresso-Tutorial/SSSP_1.1.2_PBE_precision'
 /
 &system 
 	ibrav = 1, celldm(1) = 20,
@@ -18,6 +18,6 @@ ATOMIC_SPECIES
  H 1.00784 H_ONCV_PBE-1.0.oncvpsp.upf
 ATOMIC_POSITIONS (angstrom)
  H 0.00 0.00 0.00
- H 3.00 0.00 0.00
+ H 2.00 0.00 0.00
 K_POINTS (automatic)
   1 1 1 0 0 0 
